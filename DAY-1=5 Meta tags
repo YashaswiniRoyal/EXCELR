@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tag Attributes</title>
+</head>
+<body>
+    <h1>Meta Tag Attributes</h1>
+    <div id="metaAttributes"></div>
+
+    <script>
+        // Function to display meta tag attributes
+        function showMetaTagAttributes() {
+            var metaTags = document.getElementsByTagName('meta');
+            var output = "";
+
+            for (var i = 0; i < metaTags.length; i++) {
+                var attributes = metaTags[i].getAttributeNames();
+                output += "<p>Meta Tag " + (i + 1) + ":</p><ul>";
+
+                for (var j = 0; j < attributes.length; j++) {
+                    var attributeName = attributes[j];
+                    var attributeValue = metaTags[i].getAttribute(attributeName);
+                    output += "<li><strong>" + attributeName + ":</strong> " + attributeValue + "</li>";
+                }
+
+                output += "</ul>";
+            }
+
+            document.getElementById('metaAttributes').innerHTML = output;
+        }
+
+        // Call the function when the page loads
+        window.onload = showMetaTagAttributes;
+    </script>
+</body>
+</html>
