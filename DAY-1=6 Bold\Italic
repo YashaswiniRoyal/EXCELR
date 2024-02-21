@@ -1,0 +1,14 @@
+<!Doctype Html>
+<Html>   
+<Head>    
+<Title>   
+    To highlight the text in the paragraph using bold,italic and underline tag
+</Title>
+</Head>
+<Body>
+    <p>"I love India" encapsulates a sentiment of profound admiration and affection for a country rich in culture, diversity, and history. 
+        <b>From the majestic Himalayas to the serene backwaters of Kerala, India's landscape is as diverse as its people. </b>
+        <i>Its ancient traditions, vibrant festivals, and delicious cuisine add layers of charm that captivate the heart.</i>
+        <u> But beyond its physical beauty, it's the spirit of resilience, unity, and warmth ingrained in its people that truly makes India special. </u></p> 
+</Body> 
+</Html>
